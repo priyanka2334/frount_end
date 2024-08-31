@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        /* Add these styles to your existing CSS */
+        .image-container {
+            position: relative;
+            text-align: center;
+        }
+        .overlay-links {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .overlay-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+        }
+        .overlay-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="image-container">
+            <img src="./images/dhanjal.jpg" id="img">
+            <div class="overlay-links">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="images-containers">
+            <div>
+                <img src="./images/Address-icon.png">
+                <h3 class="head">ADDRESS</h3>
+                <p class="para">Dhanjal Engineering Works<br>
+                    B-20 Sector 3, DSIIDC, Bawana<br>
+                    Industrial Area, Delhi – 110039</p>
+            </div>
+            <div>
+                <img src="./images/Phone-icon.png">
+                <h3 class="head">PHONE</h3>
+                <p class="para">9810240159<br>
+                    9871220159<br>
+                    011-42828336</p>
+            </div>
+            <div>
+                <img src="./images/Email-icon.png">
+                <h3 class="head">EMAIL</h3>
+                <p class="para">DHARMINDER@DHANJAL.IN<br>
+                    INFO@DHANJAL.IN</p>
+            </div>
+        </div>
+        <div class="display-container">
+            <div class="location"></div>
+            <div class="container">
+                <h2>GET IN TOUCH</h2>
+                <form action="submit_form.php" method="post">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Name">
+                    </div>
+            
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                    </div>
+            
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Phone">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="address" name="address" required placeholder="Address">
+                    </div>
+            
+                    <div class="form-group">
+                        <textarea id="message" name="message" required placeholder="Message"></textarea>
+                    </div>
+            
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
